@@ -17,8 +17,14 @@ from django.urls import include, path
 from rest_framework import routers
 from rest_framework.authtoken.views import obtain_auth_token
 from firstdateapp.models import *
+from firstdateapp.views import Customers
+from firstdateapp.views import Comments
+from firstdateapp.views import Favorites
 
 router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'customers', Customers, 'customer')
+router.register(r'comments', Comments, 'comment')
+router.register(r'favoites', Favorites, 'favorite')
 
 urlpatterns = [
     path('', include(router.urls)),
