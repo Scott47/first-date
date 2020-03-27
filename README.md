@@ -1,6 +1,6 @@
 # first-date
 
-# Installations and Configuratio
+# Installations and Configuration
 
 ## Creating the Project
 
@@ -36,7 +36,8 @@ Django gives you user and role management tables out of the box, and there is a 
 ```sh
 python manage.py migrate
 ```
-## Create .gitignore and make sure to include your virtual environment ```sh FirstDateEnv```, you're database, and migrations.
+Create .gitignore and make sure to include your virtual environment
+```sh FirstDateEnv```, you're database, and migrations.
 
 Now you can start the project and verify that everything was configured correctly.
 
