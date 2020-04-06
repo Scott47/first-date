@@ -24,7 +24,7 @@ from firstdateapp.views import Favorites
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'customers', Customers, 'customer')
 router.register(r'comments', Comments, 'comment')
-router.register(r'favoites', Favorites, 'favorite')
+router.register(r'favorites', Favorites, 'favorite')
 
 urlpatterns = [
     path('', include(router.urls)),
