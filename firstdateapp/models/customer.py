@@ -7,6 +7,9 @@ from .favorite import Favorite
 class Customer(models.Model):
 
    user = models.OneToOneField(User, on_delete=models.CASCADE)
+   user_name = models.CharField(max_length=100)
+   first_name = models.CharField(max_length=100)
+   last_name = models.CharField(max_length=100)
    favorite = models.ManyToManyField(Favorite, related_name="favorites")
 
    def __str__(self):
